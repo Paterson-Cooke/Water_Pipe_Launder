@@ -79,7 +79,7 @@ function draw() {
   y_location = y_location + y_spacing
   text('Fluid height (m):        ' + fluid_height.toPrecision(3), x_location, y_location);
   y_location = y_location + y_spacing
-  text('y/d (%):                 ' + (100 * y_over_d).toPrecision(3) + '%', x_location, y_location);
+  text('Fluid height / Dia. (%): ' + (100 * y_over_d).toPrecision(3) + '%', x_location, y_location);
   y_location = y_location + y_spacing
   text('Beta (-):                ' + beta.toPrecision(3), x_location, y_location);
   y_location = y_location + y_spacing
@@ -105,9 +105,9 @@ function draw() {
   y_location = y_location + y_spacing
   text('Bend superelevation height (m): ' + superelevation_height.toPrecision(3), x_location, y_location);
   y_location = y_location + y_spacing
-  text('Fluid height in bend (m):       ' + fluid_height_bend.toPrecision(3), x_location, y_location);
+  text('Bend fluid height (m):          ' + fluid_height_bend.toPrecision(3), x_location, y_location);
   y_location = y_location + y_spacing
-  text('y/d in bend (%):                ' + (100 * y_over_d_bend).toPrecision(3) + '%', x_location, y_location);
+  text('Bend fluid height / Dia. (%):   ' + (100 * y_over_d_bend).toPrecision(3) + '%', x_location, y_location);
   text('lee.goudzwaard@patersoncooke.com', 5, height - 5);
 }
 
